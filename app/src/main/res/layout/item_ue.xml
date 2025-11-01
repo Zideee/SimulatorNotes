@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Titre de l'UE -->
+    <TextView
+        android:id="@+id/ueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UE31 - Compétence 1"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Moyenne de l'UE -->
+    <TextView
+        android:id="@+id/ueAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Moyenne : 10.00"
+        android:textSize="14sp" />
+
+    <!-- RecyclerView pour afficher les Modules de cette UE -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moduleRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" /> <!-- Masqué par défaut -->
+
+</LinearLayout>
